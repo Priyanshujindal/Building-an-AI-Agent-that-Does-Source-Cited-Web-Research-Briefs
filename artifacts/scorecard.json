@@ -1,0 +1,26 @@
+{
+  "brief_exists": true,
+  "report_exists": true,
+  "logs_exist": true,
+  "logs_nonempty": true,
+  "has_references": true,
+  "unique_domains": 4,
+  "domains": [
+    "arxiv.org",
+    "en.wikipedia.org",
+    "link.springer.com",
+    "nature.com"
+  ],
+  "has_3_domains": true,
+  "num_short_quotes": 2,
+  "has_2_quotes": true,
+  "all_quotes_short": true,
+  "quotes_grounded_in_sources": 2,
+  "num_paragraphs": 5,
+  "paragraphs_ok": true,
+  "num_inline_citations": 7,
+  "has_inline_citations": true,
+  "citations_all_in_references": true,
+  "mode": "fallback_extractive",
+  "passed": true
+}

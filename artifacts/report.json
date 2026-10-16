@@ -1,0 +1,220 @@
+{
+  "topic": "How does retrieval-augmented generation reduce hallucinations in large language models?",
+  "mode": "fallback_extractive",
+  "rounds": 2,
+  "errors": [
+    "RuntimeError: Event loop is closed"
+  ],
+  "messages": [],
+  "tool_calls": [
+    {
+      "tool": "ddg_search",
+      "args": {
+        "query": "How does retrieval-augmented generation reduce hallucinations in large language models?",
+        "max_results": 10
+      },
+      "summary": "7 results"
+    },
+    {
+      "tool": "wiki_summary",
+      "args": {
+        "title_or_query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+      },
+      "summary": "Retrieval-augmented generation"
+    },
+    {
+      "tool": "select_top_urls",
+      "args": {
+        "k": 5
+      },
+      "summary": "5 urls"
+    },
+    {
+      "tool": "fetch_page_clean",
+      "args": {
+        "url": "https://arxiv.org/abs/2404.08189"
+      },
+      "summary": "2386 chars -> [2]"
+    },
+    {
+      "tool": "fetch_page_clean",
+      "args": {
+        "url": "https://www.nature.com/articles/s41467-026-71411-1"
+      },
+      "summary": "27 chars -> [3]"
+    },
+    {
+      "tool": "fetch_page_clean",
+      "args": {
+        "url": "https://dl.acm.org/doi/10.1145/3774904.3792598"
+      },
+      "summary": "failed: HTTPError: 403 Client Error: Forbidden for url: https://dl.acm.org/doi/10.1145/3774904.3792598"
+    },
+    {
+      "tool": "fetch_page_clean",
+      "args": {
+        "url": "https://www.mdpi.com/2227-7390/13/5/856"
+      },
+      "summary": "failed: HTTPError: 403 Client Error: Forbidden for url: https://www.mdpi.com/2227-7390/13/5/856"
+    },
+    {
+      "tool": "fetch_page_clean",
+      "args": {
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3"
+      },
+      "summary": "209 chars -> [4]"
+    }
+  ],
+  "search_results": [
+    {
+      "title": "Reducing hallucination in structured outputs via Retrieval ...",
+      "url": "https://arxiv.org/abs/2404.08189",
+      "snippet": "Apr 12, 2024 · Thanks to our implementation of RAG, our proposed system significantly reduces hallucinations in the output and improves the generalization of our LLM in out-of-domain settings.",
+      "domain": "arxiv.org",
+      "rank": 1,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "Hallucination Mitigation for Retrieval-Augmented Large ... - MDPI",
+      "url": "https://www.mdpi.com/2227-7390/13/5/856",
+      "snippet": "Mar 3, 2025 · This review focuses on hallucination in retrieval-augmented large language models (LLMs). We first examine the causes of hallucinations from different sub-tasks in the retrieval and generation phases.",
+      "domain": "mdpi.com",
+      "rank": 2,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "Mitigating Hallucinations in Large Language Models via ...",
+      "url": "https://www.researchgate.net/profile/Ahmed-Ragab-Mahmoud/publication/399075968_Mitigating_Hallucinations_in_Large_Language_Models_via_Retrieval-Augmented_Generation_RAG/links/694dbf9c06a9ab54f84ace45/Mitigating-Hallucinations-in-Large-Language-Models-via-Retrieval-Augmented-Generation-RAG.pdf",
+      "snippet": "This study concludes that Retrieval-Augmented Generation represents a substantive and conceptually grounded approach to mitigating hallucinations in large language models.",
+      "domain": "researchgate.net",
+      "rank": 3,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "Hyper-RAG: combating LLM hallucinations using hypergraph ...",
+      "url": "https://www.nature.com/articles/s41467-026-71411-1",
+      "snippet": "Apr 27, 2026 · To address this, we introduce Hyper-RAG, a hypergraph-driven Retrieval-Augmented Generation method that comprehensively captures both pairwise and beyond-pairwise correlations in...",
+      "domain": "nature.com",
+      "rank": 4,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "Taming AI Hallucinations: Innovations in Retrieval-Augmented ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3",
+      "snippet": "Oct 1, 2025 · Retrieval Augmented Generation (RAG) has emerged as a game-changing solution to the persistent challenge of hallucinations in AI systems, offering a robust framework for grounding responses in factual up-to-date information.",
+      "domain": "link.springer.com",
+      "rank": 5,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "Mitigating Hallucination in Large Language Models",
+      "url": "https://arxiv.org/pdf/2510.24476",
+      "snippet": "Among various mitigation strategies, Retrieval-Augmented Generation (RAG) and reasoning enhancement have emerged as two of the most effective and widely adopted approaches, marking a shift from merely suppressing hallucinations to balancing creativity and reliability.",
+      "domain": "arxiv.org",
+      "rank": 6,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    },
+    {
+      "title": "SeaRAG: Reducing Hallucination in Retrieval-Augmented ...",
+      "url": "https://dl.acm.org/doi/10.1145/3774904.3792598",
+      "snippet": "Apr 12, 2026 · In this work, we analyze adaptive RAG methods through probing uncertainty to explore real-time entity- and statement-level verification, finding that such information can serve as training-free signals for hallucination detection, and the entropy probes can also guide principled document ranking.",
+      "domain": "dl.acm.org",
+      "rank": 7,
+      "query": "How does retrieval-augmented generation reduce hallucinations in large language models?"
+    }
+  ],
+  "selected_urls": [
+    "https://arxiv.org/abs/2404.08189",
+    "https://www.nature.com/articles/s41467-026-71411-1",
+    "https://dl.acm.org/doi/10.1145/3774904.3792598",
+    "https://www.mdpi.com/2227-7390/13/5/856",
+    "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3"
+  ],
+  "snippets": [
+    {
+      "n": 1,
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "title": "Retrieval-augmented generation",
+      "snippet": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. These documents supplement information from the LLM's pre-existing training data."
+    },
+    {
+      "n": 2,
+      "url": "https://arxiv.org/abs/2404.08189",
+      "title": "Reducing hallucination in structured outputs via Retrieval-Augmented Generation",
+      "snippet": "Computer Science > Machine Learning [Submitted on 12 Apr 2024] Reducing hallucination in structured outputs via Retrieval-Augmented Generation View a PDF of the paper titled Reducing hallucination in structured outputs via Retrieval-Augmented Generation, by Patrice B\\'echard and Orlando Marquez Ayala A common and fundamental limitation of Generative AI (GenAI) is its propensity to hallucinate. While large language models (LLM) have taken the world by storm, without eliminating or at least reduci"
+    },
+    {
+      "n": 3,
+      "url": "https://www.nature.com/articles/s41467-026-71411-1",
+      "title": "Hyper-RAG: combating LLM hallucinations using hypergraph-driven retrieval-augmented generation - Nature Communications",
+      "snippet": "Explore articles by subject"
+    },
+    {
+      "n": 4,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3",
+      "title": "Client Challenge",
+      "snippet": "A required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. Please check your connection, disable any ad blockers, or try using a different browser."
+    }
+  ],
+  "sources": [
+    {
+      "n": 1,
+      "title": "Retrieval-augmented generation",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "domain": "en.wikipedia.org",
+      "text": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. These documents supplement information from the LLM's pre-existing training data."
+    },
+    {
+      "n": 2,
+      "title": "Reducing hallucination in structured outputs via Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2404.08189",
+      "domain": "arxiv.org",
+      "text": "Computer Science > Machine Learning\n[Submitted on 12 Apr 2024]\nReducing hallucination in structured outputs via Retrieval-Augmented Generation\nView a PDF of the paper titled Reducing hallucination in structured outputs via Retrieval-Augmented Generation, by Patrice B\\'echard and Orlando Marquez Ayala\nA common and fundamental limitation of Generative AI (GenAI) is its propensity to hallucinate. While large language models (LLM) have taken the world by storm, without eliminating or at least reducing hallucinations, real-world GenAI systems may face challenges in user adoption. In the process of deploying an enterprise application that produces workflows based on natural language requirements, we devised a system leveraging Retrieval Augmented Generation (RAG) to greatly improve the quality of the structured output that represents such workflows. Thanks to our implementation of RAG, our proposed system significantly reduces hallucinations in the output and improves the generalization of our LLM in out-of-domain settings. In addition, we show that using a small, well-trained retriever encoder can reduce the size of the accompanying LLM, thereby making deployments of LLM-based systems less resource-intensive.\nTo be presented at NAACL 2024. 11 pages and 4 figures\n; Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Information Retrieval (cs.IR)\narXiv-issued DOI via DataCite\nDOI(s) linking to related resources\nFrom: Orlando Marquez Ayala [\nFri, 12 Apr 2024 01:42:09 UTC (975 KB)\nChange to browse by:\nBibliographic and Citation Tools\nWhat is the Explorer?\nWhat is Connected Papers?\nWhat are Smart Citations?\nCode, Data and Media Associated with this Article\nLinks to Code Toggle\nCatalyzeX Code Finder for Papers\nRecommenders and Search Tools\nLink to Influence Flower\nWhat are Influence Flowers?\narXivLabs: experimental projects with community collaborators\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\nHave an idea for a project that will add value for arXiv's community?\nLearn more about arXivLabs\nWhich authors of this paper are endorsers?"
+    },
+    {
+      "n": 3,
+      "title": "Hyper-RAG: combating LLM hallucinations using hypergraph-driven retrieval-augmented generation - Nature Communications",
+      "url": "https://www.nature.com/articles/s41467-026-71411-1",
+      "domain": "nature.com",
+      "text": "Explore articles by subject"
+    },
+    {
+      "n": 4,
+      "title": "Client Challenge",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3",
+      "domain": "link.springer.com",
+      "text": "A required part of this site couldn’t load. This may be due to a browser\nextension, network issues, or browser settings. Please check your\nconnection, disable any ad blockers, or try using a different browser."
+    }
+  ],
+  "follow_ups": [],
+  "draft": "Retrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. [1]\n\nComputer Science > Machine Learning [Submitted on 12 Apr 2024] Reducing hallucination in structured outputs via Retrieval-Augmented Generation View a PDF of the paper titled Reducing hallucination in structured outputs via Retrieval-Augmented Generation, by Patrice B\\'echard and Orlando Marquez Ayala A common and fundamental limitation of Generative AI (GenAI) is its propensity to hallucinate. While large language models (LLM) have taken the world by storm, without eliminating or at least reducing hallucinations, real-world GenAI systems may face challenges in user adoption. [2]\n\nExplore articles by subject [3]\n\nA required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. [4]",
+  "brief": "# Research Brief: How does retrieval-augmented generation reduce hallucinations in large language models?\n\nRetrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. [1] As the source puts it, \"Retrieval-augmented generation (RAG) is a technique that enables large language\" [1].\n\nComputer Science > Machine Learning [Submitted on 12 Apr 2024] Reducing hallucination in structured outputs via Retrieval-Augmented Generation View a PDF of the paper titled Reducing hallucination in structured outputs via Retrieval-Augmented Generation, by Patrice B\\'echard and Orlando Marquez Ayala A common and fundamental limitation of Generative AI (GenAI) is its propensity to hallucinate. While large language models (LLM) have taken the world by storm, without eliminating or at least reducing hallucinations, real-world GenAI systems may face challenges in user adoption. [2] As the source puts it, \"While large language models (LLM) have taken the world by\" [2].\n\nExplore articles by subject [3]\n\nA required part of this site couldn’t load. This may be due to a browser extension, network issues, or browser settings. [4]\n\nRetrieval-augmented generation (RAG) is a technique that enables large language models (LLMs) to retrieve and incorporate new information from external data sources. With RAG, LLMs first refer to a specified set of documents, then respond to user queries. [1]\n\n## References\n\n[1] Retrieval-augmented generation — https://en.wikipedia.org/wiki/Retrieval-augmented_generation\n[2] Reducing hallucination in structured outputs via Retrieval-Augmented Generation — https://arxiv.org/abs/2404.08189\n[3] Hyper-RAG: combating LLM hallucinations using hypergraph-driven retrieval-augmented generation - Nature Communications — https://www.nature.com/articles/s41467-026-71411-1\n[4] Client Challenge — https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3\n",
+  "references": [
+    {
+      "n": 1,
+      "title": "Retrieval-augmented generation",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation"
+    },
+    {
+      "n": 2,
+      "title": "Reducing hallucination in structured outputs via Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2404.08189"
+    },
+    {
+      "n": 3,
+      "title": "Hyper-RAG: combating LLM hallucinations using hypergraph-driven retrieval-augmented generation - Nature Communications",
+      "url": "https://www.nature.com/articles/s41467-026-71411-1"
+    },
+    {
+      "n": 4,
+      "title": "Client Challenge",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-93681-4_3"
+    }
+  ],
+  "quotes": [
+    "Retrieval-augmented generation (RAG) is a technique that enables large language",
+    "While large language models (LLM) have taken the world by"
+  ],
+  "num_paragraphs": 5,
+  "warnings": []
+}
